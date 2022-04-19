@@ -184,7 +184,9 @@ public class AttitudeController : MonoBehaviour
         if(isDroneOn){
             // limit torque to the max torque of the rotor
             torqueApply = LimitTorque(torqueApply);
+
             droneRb.AddRelativeTorque(torqueApply, ForceMode.Force);
+
         }
     }
 
